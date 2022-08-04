@@ -1,0 +1,321 @@
+.Main_Haeder {
+    width: 80%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    margin: auto;
+}
+.Header_Menu_Container {
+    display: none;
+}
+.Collections_style {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: hsl(0, 0%, 0%);
+}
+
+.Collections_style h4 {
+    font-weight: 400;
+    opacity: 75%;
+    padding: 38px 0px;
+    box-sizing: border-box;
+    margin: 0px;
+}
+.Collections_style h4:hover {
+    cursor: pointer;
+    font-weight: 700;
+    opacity: 1;
+    border-bottom: 4px solid hsl(26, 100%, 55%);
+}
+.header_items {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_items h1 {
+    position: relative;
+    bottom: 4px;
+}
+.Header_Active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.avatar_container {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-left: 25px;
+}
+.avatar:hover {
+    border: 2px solid hsl(26, 81%, 47%);
+}
+.cart_icon{
+    position: relative;
+    width: 22px;
+    height: 22px;
+    top: 3px;
+}
+.cart_icon:hover {
+    cursor: pointer;
+    filter: brightness(0%);
+}
+.Cart_container {
+    margin-bottom: 12px;
+}
+.Cart_Notification {
+    position: relative;
+    top: 13px;
+    right: -10px;
+    width: 20px;
+    height: 13px;
+    border-radius: 20px;
+    font-size: 11px;
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.Cart_Menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 83px;
+    right: 90px;
+    width: 350px;
+    height: 225px;
+    background-color:  hsl(0, 0%, 100%);
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px 2px hsl(219deg 9% 45% / 38%);
+    z-index: 1;
+}
+.Menu_Header {
+    padding:  0px 0px 0px 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+}
+.Menu_Header h3 {
+    font-size: 18px;
+    font-weight: 800;
+    color: hsl(220, 13%, 13%);
+}
+.Menu_Body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    box-sizing: border-box;
+}
+.Menu_Body h4{
+    margin: auto;
+    font-weight: 800;
+    color: hsl(219, 9%, 45%);
+}
+.Price_Container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.Item_Container {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Img_Product {
+    width: 52px;
+    height: 100%;
+    border-radius: 5px;
+}
+.Item_Texts {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Item_Name {
+    font-size: 14px;
+    margin: 0px;
+    color: hsl(219, 9%, 45%);
+    font-weight: 400;
+}
+.Product_Price {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.Product_Price p, h5 {
+    margin: 0px;
+    color: hsl(219, 9%, 45%);
+    font-weight: 400;
+}
+.Product_Price h5 {
+    color: black;
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: 5px;
+}
+.Item_Container button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    filter: brightness(100%);
+    transition: 0.3s;
+}
+.Item_Container button:hover {
+    cursor: pointer;
+    filter: brightness(60%);
+}
+.Checkout_Btn {
+    width: 100%;
+    height: 50px;
+    outline: none;
+    background-color: hsl(26, 100%, 55%);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    transition: 0.3s;
+    box-sizing: border-box;
+    border: 2px solid hsl(26, 100%, 55%);
+}
+.Checkout_Btn:hover {
+    cursor: pointer;
+    background-color: white;
+    color: hsl(26, 100%, 55%);
+}
+@media screen and (max-width: 1000px) {
+    .Cart_Menu {
+        width: 320px;
+    }
+    .Menu_Body {
+        width: 90%;
+        height: 90%;
+        padding: 0px;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 720px) {
+    .Main_Haeder {
+        width: 95%;
+    }
+    .Collections_style {
+        width: 70%;
+    }
+    .Collections_style h4 {
+        font-size: 14px;
+    }
+    .avatar_container {
+        width: 40px; height: 40px;
+    }
+    .avatar {
+        width: 35px; height: 35px;
+    }
+    .Cart_Menu {
+        right: 37px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .Main_Haeder {
+        height: 60px;
+    }
+    .Collections_style {
+        display: none;
+    }
+    .Cart_Menu {
+        width: 95%;
+        right: 0px;
+        top: 195px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .Header_Active {
+        width: 100px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header_items {
+        width: 170px;
+    }
+    .avatar_container {
+        width: 50px; height: 50px;
+    }
+    .avatar {
+        width: 100%; height: 100%;
+        margin: 0px;
+    }
+    .Header_Menu_Container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .Header_Menu_Container img {
+        z-index: 4;
+    }
+    .Header_Menu_Container img:hover {
+        cursor: pointer;
+    }
+    .Header_Menu_AllText {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.149);
+        top: 0px;
+        left: 0px;
+        z-index: 2;
+    }
+    .Header_Menu_Text {
+        width: 75%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: white;
+        left: 0px;
+        transition: 0.5s;
+        z-index: 2;
+    }
+    .Header_Menu_Text div {
+        width: 100%;
+        position: relative;
+        top: 80px;
+    }
+    .Header_Menu_Text h4 {
+        margin-left: 15px;
+        font-size: 23px;
+        transition: 0.3s;
+    }
+    .Header_Menu_Text h4:hover {
+        cursor: pointer;
+        margin-left: 25px;
+    }
+}
+@media screen and (max-width: 500px) {
+
+}
